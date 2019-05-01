@@ -1,0 +1,19 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#form .radio_btn {
+    cursor: pointer;
+}
+
+#form button[name=hider] {
+    cursor: pointer;
+}
+
+#form button[name=save]:hover {
+    background: #339933;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+
+<head>
+    <title>Concurso - Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" type="text/css" href="css/mobile-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet-styles.css" media="only screen and (min-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/desktop-styles.css" media="only screen and (min-width: 1024px)">
+</head>
+
+<body>
+    <div id="background"></div>
+    <header>
+        <nav>
+            <h1>FORMULARIO</h1>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <div id="form">
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <label class="required">Nombre y apellidos</label>
+                        </li>
+                        <li>
+                            <input type="text" name="single" placeholder="Primer miembro" required>
+                        </li>
+                        <li id="hide" class="hidden">
+                            <input type="text" name="couples" placeholder="Segundo miembro">
+                        </li>
+                        <li>
+                            <button type="button" name="hider">
+                                <span>></span>
+                            </button>
+                        </li>
+                        <li>
+                            <label class="required">Fecha del concurso</label>
+                        </li>
+                        <li>
+                            <input type="date" name="date" required>
+                        </li>
+                        <li>
+                            <label class="required">Programa</label>
+                        </li>
+                        <li>
+                            <label class="radio_btn">
+                                <input type="radio" name="program" checked />
+                                <span class="icon"></span>
+                                <span class="text">Corto</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="radio_btn">
+                                <input type="radio" name="program" />
+                                <span class="icon"></span>
+                                <span class="text">Largo</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="required">Nota dificultad técnica</label>
+                        </li>
+                        <li>
+                            <input type="number" name="difficulty" min="0" max="7" step="0.01" placeholder="7.00"
+                                required>
+                        </li>
+                        <li>
+                            <label class="required">Nota ejecución</label>
+                        </li>
+                        <li>
+                            <input type="number" name="execution" min="0" max="7" step="0.01" placeholder="7.00"
+                                required>
+                        </li>
+                        <li>
+                            <label class="required">Nota estética</label>
+                        </li>
+                        <li>
+                            <input type="number" name="esthetic" min="0" max="7" step="0.01" placeholder="7.00"
+                                required>
+                        </li>
+                        <li>
+                            <label id="note"> Nota total: 0.00 </label>
+                        </li>
+                        <li>
+                            <label id="required">* Campo obligatorio</label>
+                        </li>
+                        <li>
+                            <button type="submit" name="save">Guardar</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
